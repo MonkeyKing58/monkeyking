@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+
+<span id="menu-switcher" class="desktop">
+    <div class="changer">
+        <div>
+            <div>
+                <div class="menu-switcher-icon"></div>
+                <div class="menu-switcher-text">М Е Н Ю</div>
+            </div>
+            <div style="border:solid .25vw #fff; border-radius:.5rem;">
+                <div class="menu-switcher-icon"></div>
+                <div class="menu-switcher-text">М Е Н Ю</div></div>
+        </div>
+    </div>
+</span>
+
+<div id="menu-header" tabindex="-1">
+    <div class="menu-item">
+        <div>MONKEYKING</div>
+        <div>мы делаем крутые сайты</div>
+    </div>
+</div>
+
+<a href="index.php" class="menu-item-wrapper" tabindex="-1">
+    <div class="menu-item gray"
+        style="background-size:3.5vw;
+                background-image:url(images/icon/menu-home.png);
+                background-position:1.5vw 1.5vw;">
+        <div>ГЛАВНАЯ</div>
+        <div>Home Sweet Home</div>
+    </div>
+</a>
+
+<a href="planet.php" class="menu-item-wrapper" tabindex="-1">
+    <div class="menu-item gray"
+        style="background-size:3.5vw;
+                background-image:url(images/icon/menu-skills.png);
+                background-position:1.5vw 1.5vw;">
+        <div>ЧТО МЫ УМЕЕМ</div>
+        <div>Решаем любые задачи</div>
+    </div>
+</a>
+
+<a href="stellar.php" class="menu-item-wrapper" tabindex="-1">
+    <div class="menu-item gray"
+        style="background-size:3.5vw;
+                background-image:url(images/icon/menu-about.png);
+                background-position:1.5vw 1.5vw;">
+        <div>О НАС</div>
+        <div>МЫ лучшие</div>
+    </div>
+</a>
+
+<a href="works.php" class="menu-item-wrapper" tabindex="-1">
+    <div class="menu-item gray"
+        style="background-size:3.5vw;
+                background-image:url(images/icon/menu-works.png);
+                background-position:1.5vw 1.5vw;">
+        <div>НАШИ РАБОТЫ</div>
+        <div>Лучшие проекты</div>
+    </div>
+</a>
+
+<a href="contacts.php" class="menu-item-wrapper" tabindex="-1">
+    <div class="menu-item gray"
+        style="background-size:3.5vw;
+                background-image:url(images/icon/menu-contacts.png);
+                background-position:1.5vw 1.5vw;">
+        <div>КОНТАКТЫ</div>
+        <div>Свяжитесь с нами</div>
+    </div>
+</a>
+
+<span id="menu-footer" tabindex="-1">
+    <a href="tel:89273730075" class="menu-footer-item">
+        <div style="background-image:url(images/icon/footer-call.png);"></div>
+        <div>+7 (927) 373 - 00 - 75</div>
+    </a>
+    <a href="mailto:INFO@MONKEY-KING.ru" class="menu-footer-item">
+        <div style="background-image:url(images/icon/footer-mail.png);"></div>
+        <div>INFO@MONKEY-KING.ru</div>
+    </a>
+    <div class="menu-footer-simple">
+        <a id="footer-logo-1"></a>
+        <a id="footer-logo-2"></a>
+    </div>
+    <div class="menu-footer-simple" style="background-color:var(--blue);">
+        2021 | monkey-king.ru – Дизайн и разработка сайтов, SEO-услуги
+    </div>
+</span>
+
+<script>
+
+    let vh = window.innerHeight * 0.01;
+    document.documentElement.style.setProperty('--vh', `${vh}px`);
+
+    $(document).ready(function(){
+        let ADR = $(location).attr('href');
+
+        if(ADR.indexOf('planet.php') != -1){
+            $('.menu-item-wrapper:nth-of-type(2)').addClass('menu-item-selected');
+            $('.menu-item-wrapper:nth-of-type(2)').children().removeClass('gray');
+        }
+        else if(ADR.indexOf('works.php') != -1){
+            $('.menu-item-wrapper:nth-of-type(4)').addClass('menu-item-selected');
+            $('.menu-item-wrapper:nth-of-type(4)').children().removeClass('gray');
+        }
+        else if(ADR.indexOf('contacts.php') != -1){
+            $('.menu-item-wrapper:nth-of-type(5)').addClass('menu-item-selected');
+            $('.menu-item-wrapper:nth-of-type(5)').children().removeClass('gray');
+        }
+        else if(ADR.indexOf('stellar.php') != -1){
+            $('.menu-item-wrapper:nth-of-type(3)').addClass('menu-item-selected');
+            $('.menu-item-wrapper:nth-of-type(3)').children().removeClass('gray');
+        }
+        else{
+            $('.menu-item-wrapper:nth-of-type(1)').addClass('menu-item-selected');
+            $('.menu-item-wrapper:nth-of-type(1)').children().removeClass('gray');
+        }
+    })
+
+	$('#menu-switcher').click(function(){
+		if($('.menu-switcher-icon').hasClass('rotate180')){
+			$('.menu-switcher-icon').removeClass('rotate180');
+			$('#wrapper').removeClass('translateX-25');
+		}
+		else{
+			$('.menu-switcher-icon').addClass('rotate180');
+			$('#wrapper').addClass('translateX-25');
+		}
+    })
+
+</script>

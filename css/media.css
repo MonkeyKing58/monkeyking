@@ -1,0 +1,431 @@
+
+@media (orientation: portrait)
+{
+	:root
+	{
+		--planets-height:65vw!important;
+		--planets-width:165vw!important;
+
+		--half-1:1.5vw!important;
+		--half-2:3vw!important;
+		--half-3:2vw!important;
+		--half-4:2.5vw!important;
+		--half-5:3.5vw!important;
+
+		--svg-side: 100vw!important;
+	}
+
+	body{
+		height:100%!important;
+	}
+	h1{
+		font-size:10vw!important;
+	}
+	.desktop{display:none!important;}
+	.mobile{display:flex!important;}
+
+	#main-title{
+		margin-top:-10vh;
+	}
+	.main-title-row{
+		flex-wrap:wrap;
+		padding:0 15%;
+	}
+	.main-title-word{
+		width:100%;
+		margin:1vh 0;
+		justify-content: center;
+	}
+	.letter-void{
+		display: none!important;
+	}
+	.letter-container{
+		height:15vw!important;
+		width:12vw!important;
+	}
+	#wrapper{
+		width:200vw!important;
+	}
+	#menu{
+		width:100vw!important;
+		height: 100vh;
+		min-height: auto!important;
+  		height: calc(var(--vh, 1vh) * 100)!important;
+		z-index:10;
+	}
+	.menu-item-wrapper{
+		height:30vw!important;
+		min-height:30vw!important;
+		margin:.5vmax .5rem 0 .5rem!important;
+	}
+	.menu-item{
+		padding:4vmax 2vmax 4vmax 12.5vmax!important;
+		background-size:15vw!important;
+		background-position:3vmax center!important;
+	}
+	.menu-item>div:nth-of-type(1){
+		font-size:7vw!important;
+	}
+	.menu-item>div:nth-of-type(2){
+		font-size:4vw!important;
+	}
+	#menu-header{
+		height:30vw!important;
+		min-height:30vw!important;
+	}
+	#menu-header>div{
+		padding:6vw 2vw 6vw 15vw!important;
+		background-size:auto 70%!important;
+		background-position: 5% center!important;
+	}
+	#menu-header>div>div:nth-of-type(1){
+		font-size:10vw!important;
+	}
+
+	#menu-footer>div{
+		padding-left:calc(1rem + 2.5vmax)!important;
+		padding-right:calc(1rem + 2.5vmax)!important;
+	}
+	#menu-footer{
+		min-height:100vw!important;
+	}
+	#menu-footer>a{
+		margin-top:1rem!important;
+		min-height:17vw!important;
+	}
+	.menu-footer-item>div:nth-of-type(1){
+		min-height:15vw!important;
+		min-width:15vw!important;
+	}
+	.menu-footer-item>div:nth-of-type(2){
+		font-size:7vw!important;
+	}
+
+	#footer-logo-1{
+		width:45vw!important;
+		height:15vw!important;
+		margin-right:3vw!important;
+	}
+	#footer-logo-2{
+		display:flex;
+		width:15vw!important;
+		height:15vw!important;
+	}
+
+	.menu-footer-simple:nth-of-type(2){
+		padding-bottom:4rem;
+	}
+
+	#contacts{
+		align-content:flex-start!important;
+		margin-top:5vh!important;
+	}
+	#contacts-desc-img{
+		width:100vw!important;
+		height:100vw!important;
+		left:35vw!important;
+		top:calc(66vh - 50vw)!important;
+		box-shadow:  0 0 2vw rgba(255, 255, 255, 0.5)!important;
+	}
+	#contacts-desc-img-map{
+		width: 96vw!important;
+		height:96vw!important;
+	}
+	.contact-shadow{
+		width:98vw!important;
+		height:98vw!important;
+	}
+	#contacts-hand{
+		width:95vw!important;
+		top:66vh!important;
+		left:85vw!important;
+		animation-delay: -125s!important;
+	}
+	#moon-wrapper{
+		width:20vw!important;
+		height:20vw!important;
+		border-radius:10vw!important;
+		top:-10vw!important;
+	}
+	#moon-map{
+		width:40vw!important;
+		height:40vw!important;
+	}
+	.contact-shadow-moon{
+		width:24vw!important;
+		height:24vw!important;
+		margin-left:-2vw!important;
+		margin-top:-2vw!important;
+		animation-delay: -165s!important;
+	}
+	#contacts-desc-img-wrapper{
+		box-shadow: inset 0 0 2vw rgba(255, 255, 255, 0.5)!important;
+	}
+
+	#planets{
+		margin-left:-60vw!important;
+		transform:rotateZ(-17deg);
+		align-self: center!important;
+	}
+	.planet-desc{
+		display:none!important;
+	}
+	#planet-sun{
+		width:14vw!important;
+		height:14vw!important;
+		margin-top:calc((var(--planets-height) - 14vw) /2)!important;
+		margin-left:calc((var(--planets-width) - 14vw) /2)!important;
+	}
+	#planet-sun-bg{
+		width:40vw!important;
+		height:40vw!important;
+		margin-top:calc((var(--planets-height) - 40vw) /2)!important;
+		margin-left:calc((var(--planets-width) - 40vw) /2)!important;
+	}
+	#orbit-planet-1{
+		width: 3vw!important;
+		height:3vw!important;
+		margin-top:-1.5vw!important;
+	}
+	#orbit-planet-2{
+		width: 6vw!important;
+		height:6vw!important;
+		margin-top:-3vw!important;
+	}
+	#orbit-planet-3{
+		width:4vw!important;
+		height:4vw!important;
+		margin-top:-2vw!important;
+	}
+	#orbit-planet-4{
+		width: 5vw!important;
+		height:5vw!important;
+		margin-top:-2.5vw!important;
+	}
+	#orbit-planet-5{
+		width:7vw!important;
+		height:7vw!important;
+		margin-top:-3.5vw!important;
+	}
+
+	#steps-bar{
+		display:none!important;
+		flex-wrap:wrap;
+		width:100vw!important;
+		margin-left:calc((var(--planets-width) - 100vw) / 2)!important;
+	}
+	#steps-bar>div{
+		width: 100%;
+		margin:.25rem 3rem!important;
+		height:8vw!important;
+	}
+	.steps-bar-item-1,.steps-bar-item-2{
+		font-size:4vw!important;
+	}
+
+	#steps{
+		padding-bottom:4rem!important;
+	}
+	#steps-desc{
+		flex-wrap:wrap;
+		height:calc(100vh - 4rem)!important;
+		overflow-y: auto;
+	}
+	#steps-desc>div{
+		height:auto!important;
+		width:100%!important;
+	}
+	#steps-desc-img{
+		margin-top:2vh;
+		min-height:28vh!important;
+	}
+	#steps-desc-img-wrapper{
+		width:27vh!important;
+		height:27vh!important;
+	}
+	#steps-desc-img-map{
+		width:19vh!important;
+		height:19vh!important;
+	}
+	#steps-desc-text>div{
+		align-self: flex-start!important;
+		justify-content: center;
+	}
+	#steps-desc-title{
+		justify-content: center;
+		text-align: center;
+		font-size:7vw!important;
+	}
+	#steps-desc-txt{
+		justify-content: center;
+		text-align: center;
+		font-size:4vw!important;
+		line-height:6vw!important;
+	}
+	#steps-desc-text{
+		padding:0!important;
+	}
+	h3{
+		font-size:4vw!important;
+	}
+
+
+	#works{
+		/*padding-bottom:4rem!important;*/
+		overflow-y: auto!important;
+		height:calc((var(--vh, 1vh) * 100) - 4rem);
+	}
+
+	#works-desc{
+		width:100vw!important;
+		min-height:auto!important;
+		height: calc(var(--vh, 1vh) * 100)!important;
+		margin-top:0!important;
+		margin-left:0!important;
+		padding:0rem!important;
+		border-radius: 0!important;
+	}
+	#works-desc>div{
+		padding:2vw!important;
+		flex-wrap:wrap;
+		overflow-y: auto;
+	}
+	#works-desc-slider{
+		width:100%!important;
+		height:96vw!important;
+	}
+	#works-desc-slider-wrapper{
+		height:70vw!important;
+		min-height:70vw!important;
+	}
+	#works-desc-slider-contaner{
+		height:70vw!important;
+	}
+	#works-desc-slider-controller{
+		height:20vw!important;
+		margin-top:2vw!important;
+	}
+	#works-desc-slider-controller-left,#works-desc-slider-controller-right{
+		width:7.5%!important;
+		min-width:7.5%!important;
+	}
+	.works-desc-controller-item{
+		width:30vw!important;
+	}
+
+
+
+
+
+	#works-desc-text{
+		margin-left:0!important;
+		height:auto!important;
+		padding:0 2vw 1vw 2vw!important;
+	}
+	#works-text-title{
+		font-size:7.5vw!important;
+		margin-bottom:3vh!important;
+		text-align: center;
+	}
+	.works-text-pretitle{
+		font-size:5vw!important;
+		justify-content: center;
+		text-align: center;
+	}
+	#works-text-about{
+		font-size: 4vw!important;
+		line-height: 6vw!important;
+		justify-content: center;
+		text-align: center;
+	}
+	#works-text-button-bar{
+		height:auto!important;
+		flex-wrap:wrap;
+		margin-top:0!important;
+	}
+	#works-text-button-bar>a{
+		margin:3vw 0 0 0 !important;
+		height:15vw!important;
+	}
+	.works-text-switcher{
+		border-radius: .25rem!important;
+	}
+	.works-text-switcher>div:nth-of-type(1){
+		width:8vw!important;
+		height:8vw!important;
+		margin-right:3vw!important;
+	}
+	.works-text-switcher>div:nth-of-type(2){
+		font-size:6vw!important;
+	}
+
+
+	#video_poly{
+		overflow-y: auto;
+		overflow-x: hidden;
+		flex-wrap: wrap;
+		padding:1rem 0 5rem 0!important;
+	}
+	#video_poly>svg{
+		margin:0!important;
+	}
+
+	#stellar-text{
+		margin:0!important;
+	}
+	#stellar-h1{
+		justify-content: center!important;
+		text-align: center!important;
+		padding:0 0 1rem 0!important;
+		margin-top:-3.75rem;
+	}
+	#stellar-h2{
+		justify-content: center!important;
+		text-align: center!important;
+		font-size:1.5rem!important;
+	}
+	#stellar-content{
+		box-shadow: none!important;
+	}
+	#stellar-content>div{
+		text-align: center;
+	}
+	#stellar-controller{
+		order:-1;
+		justify-content: space-between;
+		z-index:1;
+	}
+	#stellar-controller>button{
+		margin:0!important;
+	}
+	#stellar-controller>button:nth-of-type(1){
+		/*margin-right:1rem!important;*/
+	}
+
+
+
+
+	/*
+	.main-title-row:nth-of-type(1)>.main-title-word:nth-of-type(1)>.letter-container{
+		height:60vw!important;
+		width:45vw!important;
+	}
+	.main-title-row:nth-of-type(1)>.main-title-word:nth-of-type(2)>.letter-container{
+		height:20vw!important;
+		width:15vw!important;
+	}
+	.main-title-row:nth-of-type(2)>.main-title-word:nth-of-type(1)>.letter-container{
+		height:20vw!important;
+		width:13vw!important;
+	}
+	.main-title-row:nth-of-type(2)>.main-title-word:nth-of-type(2)>.letter-container{
+		height:13vw!important;
+		width:10vw!important;
+	}*/
+}
+
+
+@media (orientation: landscape) and (max-width : 1023px)
+{
+
+}

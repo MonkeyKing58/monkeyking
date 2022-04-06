@@ -1,0 +1,21 @@
+<span id="menu-switcher-mobile" class="mobile">
+    <div id="menu-switcher-mobile-icon"></div>
+    <div id="menu-switcher-mobile-text">М Е Н Ю</div>
+</span>
+
+<script type="text/javascript">
+
+	$('#menu-switcher-mobile').click(function(){
+		if($('#menu-switcher-mobile-icon').hasClass('rotate180')){
+			$('#menu-switcher-mobile-icon').removeClass('rotate180');
+			$('#wrapper').removeClass('translateX-100');
+			$(this).removeClass('blue-bg');
+		}
+		else{
+			$('#menu-switcher-mobile-icon').addClass('rotate180');
+			$('#wrapper').addClass('translateX-100');
+			$(this).addClass('blue-bg');
+		}
+	})
+
+</script>

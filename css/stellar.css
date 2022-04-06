@@ -1,0 +1,166 @@
+:root{
+    --stellar:100vh;
+    --svg-side: 75vh;
+}
+
+#video_poly{
+    display:flex;
+    width:100%;
+    height:var(--stellar);
+}
+#video_poly>svg{
+    display:flex;
+    width:var(--svg-side);
+    min-width:var(--svg-side);
+    height:var(--svg-side);
+    align-self: center;
+    margin:0 calc((50vw - var(--svg-side)) / 2);
+}
+#video_poly>svg>polygon{
+    fill: #fff;
+    stroke: #fff;
+    stroke-width: 0.15;
+}
+#video_poly>svg>circle{
+    stroke: none;
+}
+
+#axe-g,#ave-v{
+    display:flex;
+    position:absolute;
+}
+#axe-g{
+    display:flex;
+    position:absolute;
+    margin-top:50vh;
+    width:100vh;
+    border-top:dotted 1px yellow;
+}
+#axe-v{
+    display:flex;
+    position:absolute;
+    margin-left:50vh;
+    height:100vh;
+    border-left:dotted 1px yellow;
+}
+
+#video_poly>svg>circle{
+    stroke: none;
+}
+
+#stellar-contaner{
+    background-color:#fff;
+}
+
+#stellar-text{
+    display:flex;
+    flex-wrap:wrap;
+    width:100%;
+    align-content: center;
+    margin-right: calc((50vw - var(--svg-side)) / 2);
+}
+#stellar-text>div,#stellar-text>h1{
+    display:flex;
+    width:100%;
+}
+#stellar-h1{
+    color:#5967ff;
+    justify-content: flex-start;
+    text-align: left;
+    padding:0 0 2rem 2rem;
+    text-shadow: .05rem .05rem .25rem #bbb!important;
+}
+#stellar-h2{
+    color:#999;
+    justify-content: flex-start;
+    text-align: left;
+    padding:0 0 1rem 0;
+    font-size:2rem;
+    text-shadow: none;
+}
+#menu-switcher-mobile{
+    background-color:#5967ff;
+    width:100%;
+    box-shadow: 0 -.25rem .5rem #aaa;
+}
+#stellar-content{
+    flex-wrap: wrap;
+    border-radius: 1rem;
+    box-shadow: 0 0 1rem #aaa;
+    padding:2rem;
+}
+
+#stellar-content>div{
+    color:#222;
+    line-height: 1.5rem;
+}
+#stellar-content>div,#stellar-content>h2{
+    display:flex;
+    width:100%;
+}
+
+.menu-switcher-text{
+    color:#aaa!important;
+}
+
+#stellar-controller{
+    padding:1rem;
+}
+#stellar-controller>button{
+    display:flex;
+    margin-left:1rem;
+    width:3rem;
+    height:3rem;
+    border-radius: .5rem;
+    border:none;
+    background-color:#fff;
+
+    background-size: 90%;
+    background-repeat: no-repeat;
+    background-position: center;
+
+    transition-duration: .3s;
+}
+#stellar-controller>button:hover{
+    cursor: pointer;
+    transform:translateY(-2px);
+}
+
+#stellar-left{
+    background-image: url(../images/icon/arrow-l-blue.png);
+}
+#stellar-right{
+    background-image: url(../images/icon/arrow-r-blue.png);
+}
+
+[v-cloak] {
+    display: flex;
+}
+
+[v-cloak]:before {
+	content: '';
+	box-sizing: border-box;
+	position: absolute;
+	margin-top: calc(50vh - 25px);
+	margin-left: calc(50vw - 25px);
+	width: 50px;
+	height: 50px;
+	border-radius: 50%;
+	border: 3px solid #ccc;
+	border-top-color: #333;
+	animation: spinner .6s linear infinite;
+	text-indent: 100%;
+	white-space: nowrap;
+    overflow: hidden;
+    z-index: 1000;
+}
+
+@keyframes spinner {
+	to {
+	transform: rotate(360deg);
+	}
+}
+
+[v-cloak] > * {
+    display: none!important;
+}

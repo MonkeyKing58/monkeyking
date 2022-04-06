@@ -1,0 +1,8 @@
+/lock
+/api
+
+/yandex*.html
+*.txt
+*.xml
+
+*.otf

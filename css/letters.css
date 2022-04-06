@@ -1,0 +1,183 @@
+
+#main-title{
+	display:flex;
+	flex-wrap: wrap;
+	align-self: center;
+	align-items:center;
+	justify-content: center;
+	z-index:1;
+	will-change: transform, opacity;
+	transition-duration: 3s;
+}
+.main-title-row{
+	display:flex;
+	width:100%;
+	justify-content: center;
+}
+.main-title-word{
+	display:flex;
+}
+.letter-container{
+	position: relative;
+	display:block;
+	width: 6vw;
+	height: 7.5vw;
+	overflow: hidden;
+}
+.letter-container>div{
+	display:flex;
+	flex-wrap: wrap;
+	position: relative;
+	width: 200%;
+	height: 200%;
+	animation-timing-function: ease-in-out;
+	animation-iteration-count: infinite;
+	will-change: transform;
+}
+.letter-container>div>div{
+	display:flex;
+	position: relative;
+	width: 50%;
+	height: 50%;
+
+	background-size: contain;
+	background-repeat: no-repeat;
+	background-position: center;
+}
+
+#letter-1{
+	animation-name:letter-1;
+	animation-duration: calc(var(--title-speed) * 10);
+}
+#letter-2{
+	animation-name:letter-2;
+	animation-duration: calc(var(--title-speed) * 17);
+}
+#letter-3{
+	animation-name:letter-1;
+	animation-duration: calc(var(--title-speed) * 13);
+	animation-delay:2s;
+}
+#letter-4{
+	animation-name:letter-3;
+	animation-duration: calc(var(--title-speed) * 10);
+}
+#letter-5{
+	animation-name:letter-4;
+	animation-duration: calc(var(--title-speed) * 9);
+	animation-delay:3s;
+}
+#letter-6{
+	animation-name:letter-1;
+	animation-duration: calc(var(--title-speed) * 20);
+	animation-delay:0s;
+}
+#letter-7{
+	animation-name:letter-4;
+	animation-duration: calc(var(--title-speed) * 15);
+	animation-delay:0s;
+}
+#letter-8{
+	animation-name:letter-2;
+	animation-duration: calc(var(--title-speed) * 11);
+	animation-delay:2s;
+}
+#letter-3-k{
+	animation-name:letter-4;
+	animation-duration: calc(var(--title-speed) * 16);
+	animation-delay:1s;
+}
+#letter-3-r{
+	animation-name:letter-1;
+	animation-duration: calc(var(--title-speed) * 12);
+	animation-delay:4s;
+}
+#letter-3-y{
+	animation-name:letter-2;
+	animation-duration: calc(var(--title-speed) * 14);
+	animation-delay:0s;
+}
+#letter-3-t{
+	animation-name:letter-3;
+	animation-duration: calc(var(--title-speed) * 22);
+	animation-delay:1s;
+}
+#letter-3-bl{
+	animation-name:letter-1;
+	animation-duration: calc(var(--title-speed) * 13);
+	animation-delay:1s;
+}
+#letter-3-e{
+	animation-name:letter-1;
+	animation-duration: calc(var(--title-speed) * 8);
+	animation-delay:4s;
+}
+#letter-4-s{
+	animation-name:letter-4;
+	animation-duration: calc(var(--title-speed) * 15);
+	animation-delay:1s;
+}
+#letter-4-a{
+	animation-name:letter-2;
+	animation-duration: calc(var(--title-speed) * 12);
+	animation-delay:3s;
+}
+#letter-4-i{
+	animation-name:letter-3;
+	animation-duration: calc(var(--title-speed) * 21);
+	animation-delay:4s;
+}
+#letter-4-t{
+	animation-name:letter-3;
+	animation-duration: calc(var(--title-speed) * 15);
+	animation-delay:5s;
+}
+#letter-4-bl{
+	animation-name:letter-1;
+	animation-duration: calc(var(--title-speed) * 11);
+	animation-delay:0s;
+}
+@keyframes letter-1{
+	from { transform:translate(0, 0);}
+	23%  { transform:translate(0, 0);}
+	25%  { transform:translate(-50%, 0);}
+	48%  { transform:translate(-50%, 0);}
+	50%  { transform:translate(-50%, -50%);}
+	73%  { transform:translate(-50%, -50%);}
+	75%  { transform:translate(0, -50%);}
+	98%  { transform:translate(0, -50%);}
+	to  { transform:translate(0, 0);}
+	}
+@keyframes letter-2{
+	from { transform:translate(0, 0);}
+	23%  { transform:translate(0, 0);}
+	25%  { transform:translate(0, -50%);}
+	48%  { transform:translate(0, -50%);}
+	50%  { transform:translate(-50%, -50%);}
+	73%  { transform:translate(-50%, -50%);}
+	75%  { transform:translate(-50%, 0);}
+	98%  { transform:translate(-50%, 0);}
+	to  { transform:translate(0, 0);}
+	}
+@keyframes letter-3{
+	from { transform:translate(0, 0);}
+	33%  { transform:translate(0, 0);}
+	35%  { transform:translate(-50%, 0);}
+	48%  { transform:translate(-50%, 0);}
+	50%  { transform:translate(-50%, -50%);}
+	83%  { transform:translate(-50%, -50%);}
+	85%  { transform:translate(0, -50%);}
+	98%  { transform:translate(0, -50%);}
+	to  { transform:translate(0, 0);}
+	}
+@keyframes letter-4{
+	from { transform:translate(0, 0);}
+	33%  { transform:translate(0, 0);}
+	35%  { transform:translate(0, -50%);}
+	48%  { transform:translate(0, -50%);}
+	50%  { transform:translate(-50%, -50%);}
+	83%  { transform:translate(-50%, -50%);}
+	85%  { transform:translate(-50%, 0);}
+	98%  { transform:translate(-50%, 0);}
+	to  { transform:translate(0, 0);}
+	}
